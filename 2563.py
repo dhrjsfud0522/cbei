@@ -10,7 +10,6 @@ for _ in range(int(input())):
 m = 0
 for a in range(101):
     for b in range(101):
-        if ll[a][b] == 1:
-            m = m + 1
+        m += ll[a][b]
 
-print(ll)
+print(m)
