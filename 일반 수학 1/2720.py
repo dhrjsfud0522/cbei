@@ -1,6 +1,5 @@
 # https://www.acmicpc.net/problem/2720
 
-
 for _ in range(int(input())):
     j = 0
     k = 0

@@ -1,3 +1,5 @@
+#https://www.acmicpc.net/problem/1193
+
 n = int(input())
 k = 0 #끝 번호
 h = 0 #최대 숫자, 개수
