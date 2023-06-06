@@ -1,16 +1,20 @@
 #https://www.acmicpc.net/problem/5073
 
 while(True):
-    try:
-        a, b, c = list(map(int, input()))
-
-        if(a == b == c):
-            print("Equilateral")
-        if(a == b != c or a != b == c or a == c != b):
-            print("Isosceles")
-        if(a != b != c):
-            print("Scalene")
-        else:
+        a, b, c = list(map(int, input().split()))
+        if(a == b == c == 0):
+            break
+        max = a
+        if(max < b):
+            max = b
+        if(max < c):
+            max = c
+        if((a + b + c - max) <= max):
             print("Invalid")
-    except:
-        break
+        
+        elif(a == b == c):
+            print("Equilateral")
+        elif(a == b or b == c or a == c):
+            print("Isosceles")
+        elif(a != b != c):
+            print("Scalene")
