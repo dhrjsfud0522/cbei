@@ -13,4 +13,4 @@ for _ in range(3):
     else:
         y.append(b)
 
-print(x[0], y[0])
+print(x[0], y[0]) 
